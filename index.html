@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Breadth-first search in JavaScript</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="breadth-search-container">
+      <div class="breadth-search-canvas">
+        <canvas id="canvas" width="520px" height="520px"></canvas>
+        <div class="container">
+          <div class="column column-center">
+            <div>Tortoise (start) Node:</div>
+            <div>Earthworm (end) node:</div>
+          </div>
+          <div class="column column-left">
+            <div>X <input type="text" value="3" id="x_start" maxlength="2"> Y <input type="text" value="6" id="y_start" maxlength="2"></div>
+            <div>X <input type="text" value="8" id="x_goal" maxlength="2"> Y <input type="text" value="10" id="y_goal" maxlength="2"></div>
+          </div>
+          <div class="column column-right">
+            <input type="button" value="Run" id="start-button" onclick="start()">
+          </div>
+        </div>
+      </div>
+      <div class="search-info">
+        <div class="path">
+          <p>
+            <span><b>Path</b>: </span>
+            <span class="path-list">...</span>
+          </p>
+        </div>
+        <div class="reachable">
+          <p>
+            <span><b>Reachable</b>: </span>
+            <span class="reachable-list">...</span>
+          </p>
+        </div>
+        <div class="explored">
+          <span><b>Explored</b>: </span>
+          <span class="explored-list">...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
